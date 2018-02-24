@@ -3,12 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <NoWin32Manifest>true</NoWin32Manifest>
+    <ApplicationInsightsResourceId>/subscriptions/82543e6e-82e2-40e3-b4e8-3b2cbd5f58c6/resourcegroups/Default-ApplicationInsights-WestUS/providers/microsoft.insights/components/xochxoch-1</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/82543e6e-82e2-40e3-b4e8-3b2cbd5f58c6/resourceGroups/Default-ApplicationInsights-WestUS/providers/microsoft.insights/components/xochxoch-1</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Azure.ImageOptimizer" Version="1.0.0.38" />
     <PackageReference Include="LigerShark.WebOptimizer.Core" Version="1.0.175-beta" />
     <PackageReference Include="LigerShark.WebOptimizer.Sass" Version="1.0.33-beta" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0" />
     <PackageReference Include="Microsoft.SyndicationFeed.ReaderWriter" Version="1.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.2" />
@@ -34,8 +37,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Connected Services\" />
     <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="wwwroot\Posts\files\" />
   </ItemGroup>
 
 </Project>
